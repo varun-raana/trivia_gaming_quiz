@@ -2,8 +2,7 @@ import React from "react";
 
 function Error({ error, values }) {
 	return (
-		<div>
-			{" "}
+		<>
 			{error && (
 				<p className="text-red-500 bg-red-100 p-2 border-l-2 border-l-red-600">
 					<span className="block">Wrong Answer</span>
@@ -12,7 +11,7 @@ function Error({ error, values }) {
 					</span>
 				</p>
 			)}
-		</div>
+		</>
 	);
 }
 

@@ -36,12 +36,14 @@ function Home() {
 		fetchTriviaQues();
 	}, []);
 
-	// console.log(values);
 	return (
 		<div className="px-5 py-10 md:px-10 border border-gray-200 rounded-md bg-white drop-shadow-lg">
 			<Title />
+
 			<Question values={values} />
+
 			<Answers {...values} />
+
 			<Form
 				values={values}
 				error={error}
